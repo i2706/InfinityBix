@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="8dp"
+        android:backgroundTint="#fff"
+        android:id="@+id/cd1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/l2"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/newwhome"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/m1"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:textColor="#050505"
+                        android:textSize="12dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="33dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/l3"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/homebw"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/m3"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Table"
+                        android:textColor="#050505"
+                        android:textSize="12dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="33dp"
+                        />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/l4"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/homebw"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/m4"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Details"
+                        android:textColor="#050505"
+                        android:textSize="12dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="33dp"
+                        />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cd1"
+        >
+
+        <FrameLayout
+            android:id="@+id/fragments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
